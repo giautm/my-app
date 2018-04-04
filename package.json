@@ -21,8 +21,8 @@
   },
   "scripts": {
     "start": "serve -s build -p $PORT",
-    "dev": "BROWSER=none react-app-rewired start --scripts-version react-scripts-ts",
-    "build": "react-app-rewired build --scripts-version react-scripts-ts",
+    "dev": "BROWSER=none react-app-rewired start --scripts-version react-scripts",
+    "build": "react-app-rewired build --scripts-version react-scripts",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "postinstall": "npm run build"
