@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button, Calendar } from 'antd';
 
 class App extends Component {
+
+  onPanelChange = (value, mode) => {
+    console.log(value, mode);
+  }
+  
   render() {
     return (
       <div className="App">
@@ -13,6 +19,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Button type="primary">Test</Button>
+        <Calendar onPanelChange={this.onPanelChange} />
       </div>
     );
   }
