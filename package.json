@@ -7,12 +7,27 @@
     "babel-core": "6.26.0",
     "babel-plugin-import": "1.7.0",
     "babel-preset-react-app": "3.1.1",
+    "hoist-non-react-statics": "2.5.0",
+    "immutable": "3.8.2",
+    "intl": "1.2.5",
+    "invariant": "2.2.4",
+    "lodash": "4.17.5",
     "react": "16.3.0",
     "react-app-rewire-less": "2.1.1",
     "react-app-rewired": "1.5.0",
     "react-dom": "16.3.0",
+    "react-intl": "2.4.0",
+    "react-redux": "5.0.7",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "5.0.0-alpha.9",
     "react-scripts": "1.1.1",
-    "serve": "6.5.3"
+    "redux": "3.7.2",
+    "redux-immutable": "4.0.0",
+    "redux-saga": "0.16.0",
+    "reselect": "3.0.1",
+    "serve": "6.5.3",
+    "whatwg-fetch": "2.0.4"
   },
   "engines": {
     "node": "9.3.0",
@@ -21,10 +36,15 @@
   },
   "scripts": {
     "start": "serve -s build -p $PORT",
-    "dev": "BROWSER=none react-app-rewired start --scripts-version react-scripts",
+    "dev": "react-app-rewired start --scripts-version react-scripts",
     "build": "react-app-rewired build --scripts-version react-scripts",
     "test": "react-scripts test --env=jsdom",
+    "eslint": "eslint src",
     "eject": "react-scripts eject",
     "postinstall": "npm run build"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-react-app": "2.1.0"
   }
 }
