@@ -12,7 +12,7 @@ import configureStore from './flux/configureStore';
 
 // Import i18n messages
 import { translationMessages } from './i18n';
-import App from './containers/App/App';
+import App from './containers/App';
 import LanguageProvider from './containers/LanguageProvider';
 
 // Create redux store with history
@@ -22,7 +22,6 @@ const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('root');
 
 const render = (messages) => {
-  console.log("Starting...");
   ReactDOM.render(
     <Provider store={store}>
       <LanguageProvider messages={messages}>
