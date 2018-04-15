@@ -1,0 +1,93 @@
+[
+  {
+    "key": "homepage",
+    "permission": "",
+    "icon": "home",
+    "text": "Trang chủ"
+  },
+  {
+    "key": "maps",
+    "permission": "maps.",
+    "icon": "environment",
+    "text": "Bản đồ",
+    "subMenus": [
+      {
+        "key": "maps/transporters",
+        "text": "Vị trí nhân viên"
+      },
+      {
+        "key": "maps/hubs",
+        "text": "Vị trí kho"
+      }
+    ]
+  },
+  {
+    "key": "catalog-suppliers",
+    "permission": "catalog_supplier.",
+    "icon": "environment",
+    "text": "Supplier",
+    "subMenus": [
+      {
+        "key": "catalog-suppliers/list",
+        "text": "Danh sách supplier"
+      },
+      {
+        "key": "catalog-suppliers/create",
+        "text": "Tạo supplier"
+      }
+    ]
+  },
+  {
+    "key": "ton_kho",
+    "permission": [
+      "requisition"
+    ],
+    "icon": "home",
+    "text": "Tồn kho",
+    "subMenus": [
+      {
+        "key": "quotation",
+        "permission": "requisition.",
+        "text": "Bảng báo giá"
+      }
+    ]
+  },
+  {
+    "key": "user",
+    "permission": [
+      "user.",
+      "user_group."
+    ],
+    "icon": "solution",
+    "text": "Tài khoản",
+    "subMenus": [
+      {
+        "key": "user/group",
+        "permission": "user_group.",
+        "text": "Quản lý nhóm"
+      },
+      {
+        "key": "user/list",
+        "permission": "user.",
+        "text": "Quản lý người dùng"
+      }
+    ]
+  },
+  {
+    "key": "permission",
+    "permission": "permission.",
+    "icon": "solution",
+    "text": "Phân Quyền",
+    "subMenus": [
+      {
+        "key": "permission",
+        "text": "Quyền hạn"
+      },
+      {
+        "key": "role?page=1",
+        "permission": "role",
+        "text": "Luật"
+      }
+    ]
+  }
+]

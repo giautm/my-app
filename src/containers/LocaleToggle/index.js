@@ -11,9 +11,9 @@ import { createSelector } from 'reselect';
 import { Radio } from 'antd';
 import { FormattedMessage } from 'react-intl';
 
+import { changeLocale } from 'containers/LanguageProvider/actions';
+import { makeSelectLocale } from 'containers/LanguageProvider/selectors';
 import { appLocales } from '../../i18n';
-import { changeLocale } from '../LanguageProvider/actions';
-import { makeSelectLocale } from '../LanguageProvider/selectors';
 import messages from './messages';
 
 const RadioButton = Radio.Button;
@@ -49,7 +49,6 @@ const mapStateToProps = createSelector(
 export function mapDispatchToProps(dispatch) {
   return {
     onLocaleToggle: (evt) => dispatch(changeLocale(evt.target.value)),
-    dispatch,
   };
 }
 
