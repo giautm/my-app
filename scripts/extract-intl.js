@@ -9,12 +9,12 @@ const transform = require('babel-core').transform;
 
 const task = require('./helpers/task');
 
-const babel = fs.readdirSync('../.babelrc');
+const babel = JSON.parse(fs.readFileSync('./.babelrc', 'utf8'));
 const presets = babel.presets;
 const plugins = babel.plugins || [];
 
-const i18n = require('../../src/i18n');
-import { DEFAULT_LOCALE } from '../../src/containers/App/constants';
+const i18n = require('../src/i18n');
+import { DEFAULT_LOCALE } from '../src/containers/App/constants';
 
 require('shelljs/global');
 
